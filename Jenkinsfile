@@ -31,7 +31,7 @@ pipeline {
 
       stage('Deploy to Cluster') {
           steps {
-                    sh 'kubectl apply -f ${WORKSPACE}/deploy.yaml'
+                    sh '/home/ec2-user/bin/kubectl apply -f ${WORKSPACE}/deploy.yaml'
           }
       }
    }
